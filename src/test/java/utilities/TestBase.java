@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class TestBase {
 
-    WebDriver driver;
+   public WebDriver driver;
 
     @BeforeClass
     public void setUp(){
@@ -17,7 +17,7 @@ public class TestBase {
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
 
